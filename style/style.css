@@ -167,7 +167,8 @@ header .container-base #menu ul li a {
 
     color: var(--corTextoBase);
 }
-.sobre-galeria .galeria-item{
+
+.sobre-galeria .galeria-item {
     display: flex;
     justify-content: space-between;
     flex: 1 1 400px;
@@ -187,4 +188,48 @@ header .container-base #menu ul li a {
 
 .sobre-galeria .galeria-txt h4 {
     font-size: 18px;
+}
+
+/* Rodape */
+footer {
+    padding: 35px 10px 10px;
+    background-color: var(--corVerde);
+    color: white;
+}
+
+footer .dados-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #366654;
+}
+
+footer .dados-rodape .endereco,
+footer .dados-rodape .fone,
+footer .dados-rodape .calendario {
+    flex: 1 1 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+footer .dados-rodape .p-contato {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+footer .author {
+    margin: 20px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    color: #cdd8d4;
 }
