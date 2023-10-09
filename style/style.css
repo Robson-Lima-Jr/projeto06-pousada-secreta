@@ -2,7 +2,7 @@
 @charset "UTF-8";
 
 :root {
-    --corTextoBase: rgb(39, 37, 37);
+    --corTextoBase: rgb(65, 59, 59);
     --corVerde: #49997C;
 }
 
@@ -104,4 +104,23 @@ header .container-base #menu ul li a {
 .banner-texto p {
     font-size: 25px;
     margin-bottom: 20px;
+}
+
+/* Container para h3 e textos */
+.configH3 {
+    padding: 50px 0px 40px 0px;
+    text-align: center;
+    color: var(--corTextoBase);
+}
+
+.configH3 h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.configH3 p {
+    line-height: 30px;
+    font-weight: 300;
 }
