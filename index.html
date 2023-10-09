@@ -8,6 +8,8 @@
     <meta name="keywords" content="Pousada, Secreta, Angra, dos, Reis">
     <meta name="author" content="Robson Junior">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
     <title>Pousada Secreta</title>
 </head>
 
@@ -29,8 +31,10 @@
     <main>
         <section class="banner">
             <div class="container-base">
-                <h2>Pousada Secreta</h2>
-                <p>A pousada reservada em Angra dos Reis</p>
+                <div class="banner-texto">
+                    <h2>Pousada Secreta</h2>
+                    <p>A pousada reservada em Angra dos Reis</p>
+                </div>
             </div>
         </section>
 
@@ -41,22 +45,23 @@
                     <p>Relaxe em nossas acomodações e curta o melhor de Angra dos Reis.</p>
                     <p>Temos quartos para solteiro, casal ou família.</p>
                 </div>
-            </div>
 
-            <div class="quartos-galeria">
-                <div class="solteiro">
-                    <img src="assets/images/quarto-solteiro1.jpg" alt="quarto solteiro">
-                    <p>QUARTO DE SOLTEIRO</p>
-                </div>
 
-                <div class="casal">
-                    <img src="assets/images/quarto-casal1.jpg" alt="quarto casal">
-                    <p>QUARTO DE CASAL</p>
-                </div>
+                <div class="quartos-galeria">
+                    <div class="solteiro">
+                        <img src="assets/images/quarto-solteiro1.jpg" alt="quarto solteiro">
+                        <p>QUARTO DE SOLTEIRO</p>
+                    </div>
 
-                <div class="solteiro">
-                    <img src="assets/images/quarto-familia1.jpg" alt="quarto família">
-                    <p>QUARTO DE FAMILIA</p>
+                    <div class="casal">
+                        <img src="assets/images/quarto-casal1.jpg" alt="quarto casal">
+                        <p>QUARTO DE CASAL</p>
+                    </div>
+
+                    <div class="familia">
+                        <img src="assets/images/quarto-familia1.jpg" alt="quarto família">
+                        <p>QUARTO DE FAMILIA</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -85,28 +90,36 @@
                 <div class="sobre-galeria">
                     <div class="galeria-item">
                         <img src="assets/images/img1.jpg" alt="imagem">
-                        <h4>A pousada</h4>
-                        <p>A Pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar.</p>
+                        <div class="galeria-txt">
+                            <h4>A pousada</h4>
+                            <p>A Pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar.</p>
+                        </div>
                     </div>
 
                     <div class="galeria-item">
                         <img src="assets/images/img2.jpg" alt="imagem">
-                        <h4>Nossos quartos</h4>
-                        <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Além
-                            disso, as unidades da Pousada Dev contam com ar-condicionado e guarda-roupa.</p>
+                        <div class="galeria-txt">
+                            <h4>Nossos quartos</h4>
+                            <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Além
+                                disso, as unidades da Pousada Dev contam com ar-condicionado e guarda-roupa.</p>
+                        </div>
                     </div>
 
                     <div class="galeria-item">
                         <img src="assets/images/img3.jpg" alt="imagem">
-                        <h4>Alimentação</h4>
-                        <p>A pousada serve café da manhã em estilo continental ou buffet.
-                            Nossos restaurantes funcionam 24hrs</p>
+                        <div class="galeria-txt">
+                            <h4>Alimentação</h4>
+                            <p>A pousada serve café da manhã em estilo continental ou buffet.
+                                Nossos restaurantes funcionam 24hrs</p>
+                        </div>
                     </div>
 
                     <div class="galeria-item">
                         <img src="assets/images/img5.jpg" alt="imagem">
-                        <h4>Recepção</h4>
-                        <p>Nossa recepção fica aberta 24hrs.</p>
+                        <div class="galeria-txt">
+                            <h4>Recepção</h4>
+                            <p>Nossa recepção fica aberta 24hrs.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,7 +129,7 @@
     <footer>
         <div class="container-base">
             <div class="dados-rodape">
-                <p>Entre em contato conosco:</p>
+                <p class="p-contato">Entre em contato conosco:</p>
 
                 <div class="endereco">
                     <img src="assets/icons/endereco.png" alt="endereço icone">

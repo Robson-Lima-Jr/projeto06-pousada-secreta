@@ -1,1 +1,235 @@
+/* Configurações Gerais */
 @charset "UTF-8";
+
+:root {
+    --corTextoBase: rgb(65, 59, 59);
+    --corVerde: #49997C;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container-base {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 350px;
+    max-width: 1024px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 0px;
+    background-color: white;
+    color: var(--corTextoBase);
+}
+
+header .container-base {
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 22px;
+    color: var(--corTextoBase);
+    font-weight: 500;
+}
+
+header h1 span {
+    color: rgb(95, 149, 219);
+}
+
+header .container-base #menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 20px;
+}
+
+header .container-base #menu ul li a {
+    text-decoration: none;
+    color: var(--corTextoBase);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: black url(../assets/images/img-fundo.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner .container-base {
+    position: relative;
+    height: 100%;
+}
+
+.banner .container-base .banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 500px;
+    background-color: #49997c9d;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.banner-texto h2 {
+    font-size: 50px;
+    margin: 40px 0px;
+}
+
+.banner-texto p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* Container para h3 e textos */
+.configH3 {
+    padding: 50px 0px 40px 0px;
+    text-align: center;
+    color: var(--corTextoBase);
+}
+
+.configH3 h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.configH3 p {
+    line-height: 30px;
+    font-weight: 300;
+}
+
+/* Seção quartos */
+.quartos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quartos-galeria .solteiro,
+.quartos-galeria .casal,
+.quartos-galeria .familia {
+    flex: 1 1 300px;
+    border-bottom: 2px solid var(--corVerde);
+}
+
+.quartos-galeria img {
+    width: 100%;
+}
+
+.quartos-galeria p {
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+/* iframe do Mapa */
+#rota iframe {
+    width: 100%;
+}
+
+/* galeria >>sobre */
+.sobre-galeria {
+    padding: 0px 10px;
+    margin: 20px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 60px;
+
+    color: var(--corTextoBase);
+}
+
+.sobre-galeria .galeria-item {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 400px;
+}
+
+.sobre-galeria .galeria-item img {
+    width: 100px;
+    height: 120px;
+    order: 2;
+}
+
+.sobre-galeria .galeria-item .galeria-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sobre-galeria .galeria-txt h4 {
+    font-size: 18px;
+}
+
+/* Rodape */
+footer {
+    padding: 35px 10px 10px;
+    background-color: var(--corVerde);
+    color: white;
+}
+
+footer .dados-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #366654;
+}
+
+footer .dados-rodape .endereco,
+footer .dados-rodape .fone,
+footer .dados-rodape .calendario {
+    flex: 1 1 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+footer .dados-rodape .p-contato {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+footer .author {
+    margin: 20px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    color: #cdd8d4;
+}
