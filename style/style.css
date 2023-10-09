@@ -3,6 +3,7 @@
 
 :root {
     --corTextoBase: rgb(39, 37, 37);
+    --corVerde: #49997C;
 }
 
 *{
@@ -17,8 +18,9 @@ body {
 
 .container-base {
     margin: 0 auto;
+    padding: 0px 10px;
     width: 100%;
-    min-width: 320px;
+    min-width: 350px;
     max-width: 1024px;
 }
 
@@ -31,7 +33,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
-    padding: 10px 5px;
+    padding: 10px 0px;
     background-color: white;
     color: var(--corTextoBase);
 }
@@ -40,6 +42,7 @@ header .container-base {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -63,4 +66,42 @@ header .container-base #menu ul li a {
     color: var(--corTextoBase);
     text-transform: uppercase;
     font-weight: 300;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: black url(../assets/images/img-fundo.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner .container-base {
+    position: relative;
+    height: 100%;
+}
+
+.banner .container-base .banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 500px;
+    background-color: #49997c9d;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.banner-texto h2 {
+    font-size: 50px;
+    margin: 40px 0px;
+}
+
+.banner-texto p {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
