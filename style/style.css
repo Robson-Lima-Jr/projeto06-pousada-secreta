@@ -6,7 +6,7 @@
     --corVerde: #49997C;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -18,7 +18,6 @@ body {
 
 .container-base {
     margin: 0 auto;
-    padding: 0px 10px;
     width: 100%;
     min-width: 350px;
     max-width: 1024px;
@@ -40,6 +39,7 @@ header {
 
 header .container-base {
     display: flex;
+    padding: 0px 10px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -123,4 +123,30 @@ header .container-base #menu ul li a {
 .configH3 p {
     line-height: 30px;
     font-weight: 300;
+}
+
+/* Seção quartos */
+.quartos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quartos-galeria .solteiro,
+.quartos-galeria .casal,
+.quartos-galeria .familia {
+    flex: 1 1 300px;
+    border-bottom: 2px solid var(--corVerde);
+}
+
+.quartos-galeria img {
+    width: 100%;
+}
+
+.quartos-galeria p {
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 20px;
 }
