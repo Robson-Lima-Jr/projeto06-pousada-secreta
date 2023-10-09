@@ -150,3 +150,41 @@ header .container-base #menu ul li a {
     margin: 15px 0px;
     font-size: 20px;
 }
+
+/* iframe do Mapa */
+#rota iframe {
+    width: 100%;
+}
+
+/* galeria >>sobre */
+.sobre-galeria {
+    padding: 0px 10px;
+    margin: 20px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 60px;
+
+    color: var(--corTextoBase);
+}
+.sobre-galeria .galeria-item{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 400px;
+}
+
+.sobre-galeria .galeria-item img {
+    width: 100px;
+    height: 120px;
+    order: 2;
+}
+
+.sobre-galeria .galeria-item .galeria-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sobre-galeria .galeria-txt h4 {
+    font-size: 18px;
+}
