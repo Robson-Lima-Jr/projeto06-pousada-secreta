@@ -146,6 +146,13 @@ header .container-base #menu ul li a {
     border-bottom: 2px solid var(--corVerde);
 }
 
+.quartos-galeria .solteiro:hover,
+.quartos-galeria .casal:hover,
+.quartos-galeria .familia:hover {
+    background-color: #366654;
+    border-bottom: 2px solid white;
+}
+
 .quartos-galeria img {
     width: 100%;
 }
@@ -154,6 +161,17 @@ header .container-base #menu ul li a {
     text-align: center;
     margin: 15px 0px;
     font-size: 20px;
+    
+}
+
+.quartos-galeria p > a {
+    padding: 0px 40px;
+    text-decoration: none;
+    color: var(--corTextoBase);
+}
+
+.quartos-galeria p > a:hover {
+    color: white;
 }
 
 /* iframe do Mapa */
@@ -180,8 +198,8 @@ header .container-base #menu ul li a {
 }
 
 .sobre-galeria .galeria-item img {
-    width: 100px;
-    height: 120px;
+    width: 90px;
+    height: 110px;
     order: 2;
 }
 
@@ -210,6 +228,7 @@ footer .dados-rodape {
     border-bottom: 1px solid #366654;
 }
 
+
 footer .dados-rodape .endereco,
 footer .dados-rodape .fone,
 footer .dados-rodape .calendario {
@@ -221,8 +240,9 @@ footer .dados-rodape .calendario {
 }
 
 footer .dados-rodape .p-contato {
+    width: 220px;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 footer .author {
