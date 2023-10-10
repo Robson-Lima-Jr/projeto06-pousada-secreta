@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+    --corTextoBase: rgb(65, 59, 59);
+    --corVerde: #49997C;
+}
+
+.banner-quarto {
+    width: 100%;
+    height: 40vh;
+    background: black url(../assets/images/img-fundo.jpg) no-repeat top center;
+}
+
+#quarto-solteiro .quartos-galeria .solteiro,
+#quarto-casal .quartos-galeria .casal,
+#quarto-familia .quartos-galeria .familia {
+    border-bottom: none;
+}
+
+#quarto-solteiro .quartos-galeria .solteiro img,
+#quarto-casal .quartos-galeria .casal img,
+#quarto-familia .quartos-galeria .familia img{
+    height: 250px;
+}
+
+.informacoes-quarto h4 {
+    margin: 45px 0px;
+    color: var(--corTextoBase);
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.informacoes-quarto ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0px 60px;
+    padding: 0px 20px;
+}
+
+
+.informacoes-quarto li {
+    list-style-type: disc;
+    flex: 0 0 220px;
+    color: var(--corTextoBase);
+}
+
+.informacoes-quarto .vazia {
+    color: transparent;
+}
