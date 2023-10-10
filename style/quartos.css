@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.banner-quarto {
+    width: 100%;
+    height: 40vh;
+    background: black url(../assets/images/img-fundo.jpg) no-repeat top center;
+}
+
+#quarto-solteiro .quartos-galeria .solteiro,
+#quarto-casal .quartos-galeria .casal,
+#quarto-familia .quartos-galeria .familia {
+    border-bottom: none;
+}
+
+#quarto-solteiro .quartos-galeria .solteiro img,
+#quarto-casal .quartos-galeria .casal img,
+#quarto-familia .quartos-galeria .familia img{
+    height: 200px;
+}
