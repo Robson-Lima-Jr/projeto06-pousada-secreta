@@ -17,6 +17,12 @@
     border-bottom: none;
 }
 
+.quartos-galeria .solteiro:hover,
+.quartos-galeria .casal:hover,
+.quartos-galeria .familia:hover {
+    background-color: white;
+}
+
 #quarto-solteiro .quartos-galeria .solteiro img,
 #quarto-casal .quartos-galeria .casal img,
 #quarto-familia .quartos-galeria .familia img{
