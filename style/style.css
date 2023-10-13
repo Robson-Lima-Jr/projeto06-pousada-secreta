@@ -165,7 +165,7 @@ header .container-base #menu ul li a {
 }
 
 .quartos-galeria p > a {
-    padding: 0px 40px;
+    padding: 20px 60px;
     text-decoration: none;
     color: var(--corTextoBase);
 }
